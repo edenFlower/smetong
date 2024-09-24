@@ -1,220 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>科研教学网站</title>
+    <title>教学成果奖培育项目</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .content {
+            margin: 0 auto;
+            width: 80%;
+        }
+        .info {
+            margin-top: 20px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .header {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            align-items: center;
         }
-
-        .header {
-            background-color: #0073e6;
-            display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
-            padding: 20px;
-        }
-
         .header img {
-            height: 80px; /* 根据需要调整图片大小 */
-            margin-right: 20px; /* 在图片和文字之间增加间距 */
-        }
-
-        header {
-            text-align: left; /* 确保文字相对于图片是左对齐的 */
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #003366;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-        nav a:hover {
-            background-color: #0059b3;
-        }
-
-        .container {
-            flex: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        section {
-            display: none;
-            margin-top: 40px;
-        }
-
-        .active {
-            display: block;
-        }
-
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            flex: 1;
-            min-width: 280px;
-            max-width: 32%;
-            position: relative;
-        }
-
-        .card img {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin: 10px;
-        }
-
-        .card h3 {
-            margin-top: 15px;
-            color: #0073e6;
-            font-size: 1.4em;
-            padding: 0 15px;
-        }
-
-        .card p {
-            padding: 0 15px 20px;
-            color: #333;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            width: 100px;
+            height: auto;
         }
     </style>
 </head>
-
 <body>
-    <!-- Header -->
     <div class="header">
-        <img src="https://s21.ax1x.com/2024/09/24/pAQBXxx.png" alt="Hainan University">
-        <header>
-            <h1>海南大学高等教育（研究生）教学成果奖培育项目</h1>
-            <!-- <p>推动创新与教育进步</p> -->
-        </header>
+        <img src="https://s21.ax1x.com/2024/09/24/pAQBXxx.png" >
     </div>
-
-    <!-- Navigation -->
-    <nav>
-        <a onclick="showSection('home')">首页</a>
-        <a onclick="showSection('about')">关于我们</a>
-        <a onclick="showSection('research')">研究方向</a>
-        <a onclick="showSection('teaching')">教学资源</a>
-        <a onclick="showSection('contact')">联系我们</a>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- 首页部分 -->
-        <section id="home" class="active">
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://s21.ax1x.com/2024/09/24/pAQabcT.png" alt="我们的团队">
-                    <h3>我们的团队</h3>
-                    <p>汇集了各领域的专家和学者，致力于推动科研和教育的发展。</p>
-                </div>
-
-                <div class="card">
-                    <img src="https://s21.ax1x.com/2024/09/24/pAQa790.png" alt="研究方向">
-                    <h3>研究方向</h3>
-                    <p>覆盖人工智能、机器人、数据分析等多个前沿领域，成果丰硕。</p>
-                </div>
-
-                <div class="card">
-                    <img src="https://s21.ax1x.com/2024/09/24/pAQaH3V.png" alt="教学资源">
-                    <h3>教学资源</h3>
-                    <p>丰富的教学视频、讲义和案例，助力学习与实践。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 关于我们部分 -->
-        <section id="about">
-            <h2>关于我们</h2>
-            <p>我们是计算机科学与技术学院的一支优秀科研团队，致力于推动高等教育的创新与发展，特别是在人工智能与机器学习领域。</p>
-        </section>
-
-        <!-- 研究方向部分 -->
-        <section id="research">
-            <div class="project-section">
-                <h2>海南大学高等教育（研究生）教学成果奖培育项目</h2>
-                <p><strong>成果名称：</strong>理论、模型、应用三元融合的研究生机器学习课程体系构建与教学实践创新</p>
-                <p><strong>成果完成人姓名：</strong>刘笑嶂, 李华, 沈笑, 崔菲菲, 张子龙, 姚碧圆</p>
-                <p><strong>成果完成单位（学院）名称：</strong>计算机科学与技术学院</p>
-            </div>
-        </section>
-
-        <!-- 教学资源部分 -->
-        <section id="teaching">
-            <h2>教学资源</h2>
-            <p>我们提供丰富的教学资源，包括教学视频、课件、讲义和案例分析，供学生和教师使用。</p>
-        </section>
-
-        <!-- 联系我们部分 -->
-        <section id="contact">
-            <h2>联系我们</h2>
-            <p>若有任何问题或合作意向，欢迎通过邮件与我们联系。</p>
-        </section>
+    <div class="content">
+        <h1>海南大学高等教育（研究生）教学成果奖培育项目</h1>
+        
+        <div class="info">
+            <h2>成果名称：理论、模型、应用三元融合的研究生机器学习课程体系构建与教学实践创新</h2>
+        </div>
+        
+        <div class="info">
+            <h2>成果完成人姓名：刘笑嶂、李华、沈笑、崔菲菲、张子龙、姚碧圆</h2>
+        </div>
+        
+        <div class="info">
+            <h2>成果完成单位(学院)名称：计算机科学与技术学院</h2>
+        </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>版权所有 © 2024 科研教学团队 | <a href="mailto:info@research-teach.com" style="color: white;">联系我们</a></p>
-    </footer>
-
-    <script>
-        // JavaScript函数用于展示选中的部分
-        function showSection(sectionId) {
-            var sections = document.querySelectorAll('section');
-            sections.forEach(function (section) {
-                section.classList.remove('active');
-            });
-            var selectedSection = document.getElementById(sectionId);
-            selectedSection.classList.add('active');
-        }
-    </script>
 </body>
-
 </html>
